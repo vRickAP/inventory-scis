@@ -1,4 +1,4 @@
-# inventory-scis: Full-Stack Inventory Management System
+# Inventory-scis: Full-Stack Inventory Management System
 
 A production-grade inventory management system with comprehensive features for product management, inventory movements with transactional posting, and real-time dashboards.
 
