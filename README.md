@@ -2,13 +2,13 @@
 
 A production-grade inventory management system with comprehensive features for product management, inventory movements with transactional posting, and real-time dashboards.
 
-## 🏗️ Architecture
+## Architecture
 
 **Backend**: NestJS + TypeScript + PostgreSQL + TypeORM
 **Frontend**: React + TypeScript + Vite + Material UI + React Query (To be implemented)
 **Infrastructure**: Docker Compose for containerized deployment
 
-## ✨ Implemented Features
+## Implemented Features
 
 ### Backend
 
