@@ -12,6 +12,10 @@ import { AuthModule } from './modules/auth/auth.module';
 import { ProductsModule } from './modules/products/products.module';
 import { InventoryModule } from './modules/inventory/inventory.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { User } from '@core/entities/user.entity';
+import { Product } from '@core/entities/product.entity';
+import { InventoryMovement } from '@core/entities/inventory-movement.entity';
+import { InventoryMovementItem } from '@core/entities/inventory-movement-item.entity';
 
 @Module({
   imports: [
@@ -24,7 +28,7 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
       useFactory: (configService: ConfigService) => ({
         type: 'postgres',
         url: configService.get('database.url'),
-        entities: [__dirname + '/core/entities/**/*.entity{.ts,.js}'],
+        entities: [User, Product, InventoryMovement, InventoryMovementItem],
         synchronize: false,
         logging: configService.get('nodeEnv') === 'development',
       }),
